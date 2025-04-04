@@ -1,0 +1,84 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5c3d2e;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.content {
+    padding: 10px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+q {
+    quotes: "“" "”";
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #5c3d2e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #4a2d1f;
+}
+
+#prev-btn:disabled, #next-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
